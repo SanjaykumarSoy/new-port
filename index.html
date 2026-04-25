@@ -3,118 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sanjay Kumar Soy | Software Engineer & Systems Developer</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <title>Space-Themed Portfolio</title>
+    <style>
+        body {
+            background: url('space-background.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        .hero {
+            text-align: center;
+            padding: 50px;
+            position: relative;
+        }
+        .orb {
+            position: absolute;
+            border-radius: 50%;
+            animation: float 4s ease-in-out infinite;
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+        .timeline {
+            margin: 20px 0;
+        }
+        .project-card {
+            border: 1px solid #fff;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 10px;
+            background: rgba(255, 255, 255, 0.1);
+        }
+    </style>
 </head>
 <body>
-    <!-- Background Pattern -->
-    <div class="mandala-bg"></div>
-    
-    <nav>
-        <div class="nav-container">
-            <div class="logo">
-                <span class="logo-text">Sanjay Kumar Soy</span>
-            </div>
-            <div class="nav-links">
-                <a href="#home">Home</a>
-                <a href="#about">About</a>
-                <a href="#projects">Projects</a>
-                <a href="#experience">Experience</a>
-                <a href="#contact">Contact</a>
-            </div>
+    <div class="hero">
+        <h1>Welcome to My Space-Themed Portfolio</h1>
+        <div class="orb" style="width: 100px; height: 100px; background: rgba(255, 255, 0, 0.5); left: 20%; top: 20%; animation-duration: 6s;"></div>
+        <div class="orb" style="width: 70px; height: 70px; background: rgba(0, 255, 255, 0.5); left: 60%; top: 30%; animation-duration: 4s;"></div>
+        <div class="orb" style="width: 50px; height: 50px; background: rgba(255, 0, 255, 0.5); left: 40%; top: 50%; animation-duration: 5s;"></div>
+    </div>
+    <div class="timeline">
+        <h2>Experience</h2>
+        <p>3+ years in Software Development with a focus on user-centered design, resulting in a 30% decrease in loading times through optimization.</p>
+    </div>
+    <div class="projects">
+        <h2>Projects</h2>
+        <div class="project-card">
+            <h3>Project One</h3>
+            <p>Problem: Users reported high load times.</p>
+            <p>Solution: Implemented caching algorithms leading to a 40% improvement in performance.</p>
         </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section id="home">
-        <div class="hero-content">
-            <h1>Sanjay Kumar Soy</h1>
-            <p class="subtitle">Systems Engineer | Full-Stack Developer | Competitive Programmer</p>
-            <p class="description">Pre-Final Year Computer Engineering Student • Building scalable systems & solving complex algorithms • Proven track record with 180+ LeetCode problems and published research</p>
-            <div class="stats">
-                <div class="stat">
-                    <span class="stat-number">180+</span>
-                    <span class="stat-label">LeetCode (Graph, DP, Greedy)</span>
-                </div>
-                <div class="stat">
-                    <span class="stat-number">8.6</span>
-                    <span class="stat-label">CGPA</span>
-                </div>
-                <div class="stat">
-                    <span class="stat-number">2</span>
-                    <span class="stat-label">Research Papers</span>
-                </div>
-            </div>
-            <div class="hero-buttons">
-                <a href="#projects" class="btn primary">View Projects</a>
-                <a href="#contact" class="btn secondary">Get in Touch</a>
-            </div>
+        <div class="project-card">
+            <h3>Project Two</h3>
+            <p>Problem: Inefficient database queries.</p>
+            <p>Solution: Refactored queries, reducing response times by 25%.</p>
         </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about">
-        <h3>About Me</h3>
-        <div class="about-container">
-            <div class="about-card">
-                <h4>Who I Am</h4>
-                <p>Results-driven Computer Engineering student specializing in systems programming, performance optimization, and competitive programming. I approach problems methodically, combining data structure mastery with strategic algorithm design to build efficient solutions.</p>
-                <p>My strengths lie in low-level systems optimization, full-stack development, and translating complex requirements into scalable architectures.</p>
-            </div>
-            <div class="education-card">
-                <h4>Education & Recognition</h4>
-                <div class="edu-item">
-                    <strong>B.E. Computer Engineering</strong>
-                    <p>Saveetha School of Engineering, Chennai</p>
-                    <p>Expected: July 2027 | CGPA: 8.6/10</p>
-                </div>
-                <div class="edu-item">
-                    <strong>Key Achievements</strong>
-                    <p>✓ Selected for Round 2 - IIT Madras Shaastra Tech Fest (Competitive Programming)</p>
-                    <p>✓ Participant - KIODE WARS, Kurukshetra'26 (Anna University)</p>
-                    <p>✓ 2 peer-reviewed research papers published</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills">
-        <h3>Technical Skills</h3>
-        <div class="skills-container">
-            <div class="skill-category">
-                <h4>💻 Programming Languages</h4>
-                <div class="skill-items">
-                    <span class="skill-level">C++ • Competitive Programming & Systems</span>
-                    <span class="skill-level">Python • ML & Scripting</span>
-                    <span class="skill-level">Java • Backend Development</span>
-                </div>
-            </div>
-            <div class="skill-category">
-                <h4>📚 Core Computer Science</h4>
-                <div class="skill-items">
-                    <span class="skill-level">Data Structures & Algorithms (Expert)</span>
-                    <span class="skill-level">Operating Systems & Memory Management</span>
-                    <span class="skill-level">Database Management Systems & SQL</span>
-                    <span class="skill-level">Computer Networks & Protocols</span>
-                </div>
-            </div>
-            <div class="skill-category">
-                <h4>🛠️ Tools & Technologies</h4>
-                <div class="skill-items">
-                    <span class="skill-level">Git • Linux • Docker Basics</span>
-                    <span class="skill-level">LLVM • Compiler Design Fundamentals</span>
-                    <span class="skill-level">Cisco Packet Tracer • Wireshark</span>
-                    <span class="skill-level">Oracle Cloud • Firebase</span>
-                </div>
-            </div>
-            <div class="skill-category">
-                <h4>🧠 Specialized Domains</h4>
-                <div class="skill-items">
-                    <span class="skill-level">Machine Learning Fundamentals</span>
-                    <span class="skill-level">Generative AI Applications & Ethics</span>
-                    <span class="skill-level">Agile/Scrum SDLC</span>
+    </div>
+    <div class="skills">
+        <h2>Skills</h2>
+        <p>JavaScript, Python, HTML/CSS - Proficient, 5+ years of experience.</p>
+    </div>
+</body>
+</html>                    <span class="skill-level">Agile/Scrum SDLC</span>
                     <span class="skill-level">Embedded Systems Basics</span>
                 </div>
             </div>
